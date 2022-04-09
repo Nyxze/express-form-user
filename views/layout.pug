@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        block title
+            title Test
+        block js
+            script(src="/jquery/jquery.min.js")
+            script(src="/bootstrap/js/bootstrap.min.js")
+            
+        block css
+            link(rel="stylesheet" href="/bootstrap/css/bootstrap.min.css")
+    body.container-fluid
+        .row.justify-content-center
+            .col-md-8
+                block content

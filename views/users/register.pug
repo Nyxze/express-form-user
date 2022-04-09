@@ -1,0 +1,22 @@
+extend ../layout
+block append js
+    script(src="/js/users")
+block content
+    h1.mt-2 Inscription
+
+    form(method="post")
+        .form-group
+            label Nom
+            input.form-control(type="text" name="name")
+        .form-group
+            label email
+            input.form-control(type="email" name="email")
+            label Confirmation email
+            input.form-control(type="email" name="confirm-email")
+        .form-group
+            label Mot de passe
+            input.form-control(type="password" name="pass")
+        .form-group
+            label Confirmation Mot de passe
+            input.form-control(type="password" name="confirm-password")
+        button.btn.btn-primary.btn-block(type="submit") Valider    
